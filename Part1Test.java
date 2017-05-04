@@ -1,4 +1,3 @@
-
 /*
  * Part1Test
  * Eric McCreath 2017
@@ -16,7 +15,7 @@ public class Part1Test {
 	   checktok(tok, "(");
 	   checktok(tok, "inc");
 	   checktok(tok, "(");
-	   checktok(tok, "0");
+	   checktok(tok, new Integer(0));
 	   checktok(tok, ")");
 	   checktok(tok, ")");
 	   checktok(tok, ":");
