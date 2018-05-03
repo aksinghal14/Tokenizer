@@ -32,5 +32,9 @@ public abstract class Exp {
 		throw new Error();
 	}
 
+	public static Functions parseFunctions(Tokenizer tok) { // still need doing
+		return null;
+	}
+
 
 }

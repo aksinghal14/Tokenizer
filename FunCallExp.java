@@ -7,9 +7,9 @@ import java.util.ArrayList;
 public class FunCallExp extends Exp {
 
 	String funname;
-	ArrayList<Exp> exps;
+	Exps exps;
 	
-	public FunCallExp(String name, ArrayList<Exp> es) {
+	public FunCallExp(String name, Exps es) {
 		funname = name;
 		exps = es;
 		
@@ -17,14 +17,14 @@ public class FunCallExp extends Exp {
 	
 	public FunCallExp(String name, Exp e1) {
 		funname = name;
-		exps = new ArrayList<Exp>();
+		exps = new Exps();
 		exps.add(e1);
 		
 	}
 	
 	public FunCallExp(String name, Exp e1, Exp e2) {
 		funname = name;
-		exps = new ArrayList<Exp>();
+		exps = new Exps();
 		exps.add(e1);
 		exps.add(e2);
 	}
@@ -53,7 +53,6 @@ public class FunCallExp extends Exp {
 	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
 		return show();
 	}
 
